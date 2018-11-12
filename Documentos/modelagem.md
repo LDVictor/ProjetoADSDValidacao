@@ -1,5 +1,5 @@
 ﻿# Modelagem
-![Imagem da modelagem]()
+![Imagem da modelagem](https://github.com/LDVictor/ProjetoADSDValidacao/blob/master/Documentos/modelo.png)
 
 γ =  eps
 
