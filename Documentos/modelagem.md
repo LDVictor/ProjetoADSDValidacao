@@ -133,4 +133,4 @@ T8 =  s
   
   -> Tempo de resposta: R >=  s
   
-  [Para ver os cálculos detalhados, clique aqui]()
+  [Para ver os cálculos detalhados, clique aqui](https://github.com/LDVictor/ProjetoADSDValidacao/tree/master/Documentos/C%C3%A1lculos)
