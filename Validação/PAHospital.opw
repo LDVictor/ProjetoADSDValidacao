@@ -14,8 +14,8 @@ Ficha de atendimento.NumberIn
 Condição do paciente.NumberOut True
 Triagem.NumberOut
 Condição do paciente.NumberOut False
-Otorrinolaringologista.NumberOut
 Otorrinolaringologista.NumberIn
+Otorrinolaringologista.NumberOut
 Posto de enfermagem.NumberIn
 Balcão de atendimento.NumberIn
 Posto de enfermagem.NumberOut

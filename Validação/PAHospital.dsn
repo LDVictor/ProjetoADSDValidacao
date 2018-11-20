@@ -9,5 +9,5 @@ MaxScanRows=8
 MaxBufferSize=2048
 FIL=MS Access
 DriverId=281
-DefaultDir=C:\Users\faria\OneDrive\Documentos
+DefaultDir=c:\Users\faria\Documents\ValidacaoADSD\ProjetoADSDValidacao\Validação
 DBQ=C:\Users\faria\Documents\ValidacaoADSD\ProjetoADSDValidacao\Validação\PAHospital.accdb
