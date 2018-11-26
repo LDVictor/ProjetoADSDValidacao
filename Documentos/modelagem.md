@@ -1,116 +1,116 @@
 ﻿# Modelagem
 ![Imagem da modelagem](https://github.com/LDVictor/ProjetoADSDValidacao/blob/master/Documentos/modelo.png)
 
-γ =  8eps
+Situação 1: γ =  8eps; P clinico = 0,5; P otorrino = 0,3; P cardio = 0,2; P medicação = 0,5; P saída direta = 0,5.
 
 λ1 = λ2 = λ3 = 8eps
 
-λ4 =  0,5 * λ3 = 4eps
+λ4 = 4eps
 
-λ5 =  0,3 * λ3 = 2,4eps
+λ5 = 2,4eps
 
-λ6 = 0,2 * λ3 = 1,6eps 
+λ6 = 1,6eps 
 
-λ7 =  λ4 + λ5 + λ6 = 8eps
+λ7 = 8eps
 
-λ8 =  0,5 * λ7 = 4eps
+λ8 = 4eps
 
-Tmax1 =  1/8 = 0,125s = Tmax2  Tmax3
+Tmax1 = Tmax2 = Tmax 3 =0,125s
 
-Tmax4 =  1/4 = 0,25s
+Tmax4 = 0,25s
 
-Tmax5 =  1/2,4 = 0,42s
+Tmax5 = 0,417s
 
-Tmax6 =  1/1,6 = 0,625s
+Tmax6 = 0,625s
 
-Tmax7 =  0,125s
+Tmax7 = 0,125s
 
-Tmax8 =  0,25s
+Tmax8 = 0,25s
 
-T1 = 0,08s = T2 = T3
-T4 = 0,12s
-T5 = 0,2s
-T6 = 0,32s
-T7 = 0,08s
-T8 = 0,12s
+T1 = T2 = T3 = 0,04s
+T4 = 0,06s
+T5 = 0,08s
+T6 = 0,1s
+T7 = 0,04s
+T8 = 0,06s
 
 
 - Utilização:
 
-  ρ1 = λ1 * T1 = 0,64 = 64% = ρ2 = ρ3
+  ρ1 = = ρ2 = ρ3 = 0,32 = 32% 
 
-  ρ4 = 0,48 => 48%
+  ρ4 = 0,24 = 24%
 
-  ρ5 = 0,48 => 48%
+  ρ5 = 0,192 = 19,2%
 
-  ρ6 = 0,512 => 51,2%
+  ρ6 = 0,16 = 16%
 
-  ρ7 = 0,64 => 64%
+  ρ7 = 0,32 = 32%
 
-  ρ8 = 0,48 => 48%
+  ρ8 = 0,24 = 24%
 
 - Quantidade de elementos:
 
-  N1 =  ρ1/(1 - ρ1) = 0,64 / 0,36 = 1,78elem = N2 = N3
+  N1 = N2 = N3 = 0,471 elem 
 
-  N4 =  0,48 / 0,52 = 0,92 elem
+  N4 =  0,316 elem
 
-  N5 =  0,48 / 0,52 = 0,92 elem
+  N5 =  0,238 elem
 
-  N6 =  0,512 / 00,488 = 1,05 elem
+  N6 =  0,19 elem
 
-  N7 =  1,78 elem
+  N7 =  0,471 elem
 
-  N8 =  0,92 elem
+  N8 =  0,316 elem
 
 - Tempo de resposta:
 
-  TR1 =  (1 / μ1) / (1 - ρ1) = (1 / 12,5) / (1 - 0,64) = 0,08 / 0,36 = 0,22s = TR2 = TR3
+  TR1 = TR2 = TR3 = 0,059s 
 
-  TR4 =  (1 / 8,33) / (1 - 0,48) = 0,12 / 0,52 = 0,23s
+  TR4 = 0,079s
 
-  TR5 =  0,2 / 0,52 = 0,38s
+  TR5 = 0,099s
 
-  TR6 =  0,32 / 0,488 = 0,655s
+  TR6 = 0,119s
 
-  TR7 =  0,22s
+  TR7 = 0,059s
 
-  TR8 =  0,23s
+  TR8 = 0,079s
 
-- Fluxo: Xi = Vi * X0
+- Fluxo:
 
-  X1 = 1 * 8 = 8eps = X2 = X3
+  X1 = X2 = X3 = 8 eps 
 
-  X4 =  0,5 * 8 = 4eps
+  X4 = 4 eps
  
-  X5 =  0,3 * 8 = 2,4eps
+  X5 = 2,4 eps
 
-  X6 = 0,2 * 8 = 1,6eps
+  X6 = 1,6 eps
 
-  X7 =  1 * 8 = 8eps
+  X7 = 8 eps
 
-  X8 = 0,5 * 8 = 4eps
+  X8 = 4 eps
 
-- Demanda: Di = ρ1 / X0
+- Demanda: 
 
-  D1 = ρ1 / X0 = 0,64 / 8 = 0,08 = D2 = D3
+  D1 = D2 = D3 = 0,04 
 
-  D4 = 0,48 / 8 = 0,06
+  D4 = 0,03
 
-  D5 = 0,48 / 8 = 0,06
+  D5 = 0,024
 
-  D6 = 0,512 / 8 = 0,064
+  D6 = 0,02
 
-  D7 = 0,08
+  D7 = 0,04
 
-  D8 = 0,06
+  D8 = 0,03
 
 - Limites Operacionais:
 
-  -> Gargalo: D1 e D7
+  -> Gargalo: D1, D2, D3 e D7
   
-  -> Vazão: Xo <=  min(1 / 0,08 ; 10,93 / 0,564) = min(12,5 ; 19,38) => X0 <= 12,5eps
+  -> Vazão: Xo <= 11,144 eps
   
-  -> Tempo de resposta: R >= max(10,93 * 0,08 ; 0,564) = max(0,86 ; 0,564) -> R >= 0,87s
+  -> Tempo de resposta: R >= 0,264s
   
   [Para ver os cálculos detalhados, clique aqui](https://github.com/LDVictor/ProjetoADSDValidacao/tree/master/Documentos/C%C3%A1lculos)
