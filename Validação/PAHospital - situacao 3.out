@@ -1,0 +1,1006 @@
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 1 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .11371     .01897     .01529     1.5872        364    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        364    
+Entrada.WaitTime                            .02961     .00979     .00000     .75622        364    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        364    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        364    
+Entrada.TotalTime                           .14332     .02320     .02110     1.5982        364    
+Cardiologista.Queue.WaitingTime             .14947     (Insuf)    .00000     .75119         17    
+Otorrinolaringologista.Queue.WaitingTime    .00945     (Insuf)    .00000     .12842         50    
+Ala de medicação.Queue.WaitingTime          .01349     (Insuf)    .00000     .31266         57    
+Balcão de atendimento.Queue.WaitingTime     .00184     .00111     .00000     .07750        367    
+Ficha de atendimento.Queue.WaitingTime      .00164     7.9354E-04 .00000     .05063        367    
+Triagem.Queue.WaitingTime                   .00214     .00122     .00000     .04653        366    
+Posto de enfermagem.Queue.WaitingTime       .00103     7.2685E-04 .00000     .04007        365    
+Clínico Geral.Queue.WaitingTime             .01551     (Insuf)    .00000     .18152        299    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.7485     .29796     .00000     7.0000     3.0000    
+R.Posto.NumberBusy                          .11398     .01577     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .11398     .01577     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .12701     .01939     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .12701     .01939     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11058     .01675     .00000     1.0000     1.0000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11058     .01675     .00000     1.0000     1.0000    
+R.Ficha.NumberBusy                          .11627     .01468     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .11627     .01468     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .30987     .05414     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .30987     .05414     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .34313     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .34313     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .16236     (Insuf)    .00000     1.0000     1.0000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .16236     (Insuf)    .00000     1.0000     1.0000    
+R.Otorrino.NumberBusy                       .10356     (Insuf)    .00000     1.0000     1.0000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .10356     (Insuf)    .00000     1.0000     1.0000    
+Cardiologista.Queue.NumberInQueue           .08470     (Insuf)    .00000     2.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .01576     (Insuf)    .00000     1.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .02564     (Insuf)    .00000     2.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .02246     (Insuf)    .00000     3.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .02002     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .02607     (Insuf)    .00000     3.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01256     (Insuf)    .00000     2.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .15455     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            367.00    
+Entrada.NumberOut                           364.00    
+R.Posto.NumberSeized                        365.00    
+R.Posto.ScheduledUtilization                .11398    
+R.Triagem.NumberSeized                      366.00    
+R.Triagem.ScheduledUtilization              .12701    
+R.Balcão.NumberSeized                       367.00    
+R.Balcão.ScheduledUtilization               .11058    
+R.Ficha.NumberSeized                        367.00    
+R.Ficha.ScheduledUtilization                .11627    
+R.Clínico.NumberSeized                      299.00    
+R.Clínico.ScheduledUtilization              .30987    
+R.Cardio.NumberSeized                       17.000    
+R.Cardio.ScheduledUtilization               .34313    
+R.Ala Méd..NumberSeized                     57.000    
+R.Ala Méd..ScheduledUtilization             .16236    
+R.Otorrino.NumberSeized                     50.000    
+R.Otorrino.ScheduledUtilization             .10356    
+System.NumberOut                            364.00    
+
+Iniciando replicação 2 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 2 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .12813     .01874     .00676     1.7827        361    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        361    
+Entrada.WaitTime                            .03937     (Corr)     .00000     2.6729        361    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        361    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        361    
+Entrada.TotalTime                           .16751     (Corr)     .01123     4.0000        361    
+Cardiologista.Queue.WaitingTime             .39718     (Insuf)    .00000     2.6729         19    
+Otorrinolaringologista.Queue.WaitingTime    .00646     (Insuf)    .00000     .08643         63    
+Ala de medicação.Queue.WaitingTime          .01395     (Insuf)    .00000     .27032         70    
+Balcão de atendimento.Queue.WaitingTime     .00143     6.2893E-04 .00000     .04878        361    
+Ficha de atendimento.Queue.WaitingTime      .00128     7.0461E-04 .00000     .04788        361    
+Triagem.Queue.WaitingTime                   .00154     (Corr)     .00000     .04812        361    
+Posto de enfermagem.Queue.WaitingTime       .00128     4.8863E-04 .00000     .03265        361    
+Clínico Geral.Queue.WaitingTime             .01177     (Insuf)    .00000     .15424        279    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 2.0156     (Corr)     .00000     8.0000     .00000    
+R.Posto.NumberBusy                          .12606     .02026     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .12606     .02026     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .11956     .01796     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .11956     .01796     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11347     .01929     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11347     .01929     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .12139     .01817     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .12139     .01817     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .25761     .05439     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .25761     .05439     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .45565     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .45565     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .17858     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .17858     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .16957     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .16957     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .25155     (Insuf)    .00000     3.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .01357     (Insuf)    .00000     1.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .03256     (Insuf)    .00000     3.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01725     (Insuf)    .00000     3.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .01546     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .01855     (Insuf)    .00000     2.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01537     (Insuf)    .00000     3.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .10949     (Insuf)    .00000     3.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            361.00    
+Entrada.NumberOut                           361.00    
+R.Posto.NumberSeized                        361.00    
+R.Posto.ScheduledUtilization                .12606    
+R.Triagem.NumberSeized                      361.00    
+R.Triagem.ScheduledUtilization              .11956    
+R.Balcão.NumberSeized                       361.00    
+R.Balcão.ScheduledUtilization               .11347    
+R.Ficha.NumberSeized                        361.00    
+R.Ficha.ScheduledUtilization                .12139    
+R.Clínico.NumberSeized                      279.00    
+R.Clínico.ScheduledUtilization              .25761    
+R.Cardio.NumberSeized                       19.000    
+R.Cardio.ScheduledUtilization               .45565    
+R.Ala Méd..NumberSeized                     70.000    
+R.Ala Méd..ScheduledUtilization             .17858    
+R.Otorrino.NumberSeized                     63.000    
+R.Otorrino.ScheduledUtilization             .16957    
+System.NumberOut                            361.00    
+
+Iniciando replicação 3 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 3 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .11050     .01150     .01166     1.1272        350    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        350    
+Entrada.WaitTime                            .02652     .01168     .00000     .59955        350    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        350    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        350    
+Entrada.TotalTime                           .13701     .01784     .01242     1.1272        350    
+Cardiologista.Queue.WaitingTime             .03596     (Insuf)    .00000     .59955         17    
+Otorrinolaringologista.Queue.WaitingTime    .03337     (Insuf)    .00000     .41672         50    
+Ala de medicação.Queue.WaitingTime          .00288     (Insuf)    .00000     .11594         53    
+Balcão de atendimento.Queue.WaitingTime     .00139     7.3551E-04 .00000     .04021        352    
+Ficha de atendimento.Queue.WaitingTime      .00151     4.8435E-04 .00000     .03528        352    
+Triagem.Queue.WaitingTime                   .00141     .00109     .00000     .06208        351    
+Posto de enfermagem.Queue.WaitingTime       9.0300E-04 4.4487E-04 .00000     .03992        350    
+Clínico Geral.Queue.WaitingTime             .01777     (Insuf)    .00000     .28416        284    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.6028     (Corr)     .00000     7.0000     2.0000    
+R.Posto.NumberBusy                          .10929     .01762     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .10929     .01762     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .11804     .01841     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .11804     .01841     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11425     .01771     .00000     1.0000     1.0000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11425     .01771     .00000     1.0000     1.0000    
+R.Ficha.NumberBusy                          .11555     (Corr)     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .11555     (Corr)     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .29682     .04836     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .29682     .04836     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .22638     (Insuf)    .00000     1.0000     1.0000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .22638     (Insuf)    .00000     1.0000     1.0000    
+R.Ala Méd..NumberBusy                       .11307     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .11307     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .19898     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .19898     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .02038     (Insuf)    .00000     1.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .05562     (Insuf)    .00000     2.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .00509     (Insuf)    .00000     1.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01633     (Insuf)    .00000     2.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .01773     (Insuf)    .00000     2.0000     .00000    
+Triagem.Queue.NumberInQueue                 .01651     (Insuf)    .00000     2.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01053     (Insuf)    .00000     2.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .16823     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            352.00    
+Entrada.NumberOut                           350.00    
+R.Posto.NumberSeized                        350.00    
+R.Posto.ScheduledUtilization                .10929    
+R.Triagem.NumberSeized                      351.00    
+R.Triagem.ScheduledUtilization              .11804    
+R.Balcão.NumberSeized                       352.00    
+R.Balcão.ScheduledUtilization               .11425    
+R.Ficha.NumberSeized                        352.00    
+R.Ficha.ScheduledUtilization                .11555    
+R.Clínico.NumberSeized                      284.00    
+R.Clínico.ScheduledUtilization              .29682    
+R.Cardio.NumberSeized                       17.000    
+R.Cardio.ScheduledUtilization               .22638    
+R.Ala Méd..NumberSeized                     53.000    
+R.Ala Méd..ScheduledUtilization             .11307    
+R.Otorrino.NumberSeized                     50.000    
+R.Otorrino.ScheduledUtilization             .19898    
+System.NumberOut                            350.00    
+
+Iniciando replicação 4 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 4 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .10477     .01728     .00887     1.9890        377    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        377    
+Entrada.WaitTime                            .02769     .00889     .00000     .66318        377    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        377    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        377    
+Entrada.TotalTime                           .13246     .02259     .01010     2.0014        377    
+Cardiologista.Queue.WaitingTime             .10891     (Insuf)    .00000     .50778         15    
+Otorrinolaringologista.Queue.WaitingTime    .02969     (Insuf)    .00000     .66318         62    
+Ala de medicação.Queue.WaitingTime          .00290     (Insuf)    .00000     .08258         53    
+Balcão de atendimento.Queue.WaitingTime     .00133     5.1187E-04 .00000     .02882        378    
+Ficha de atendimento.Queue.WaitingTime      .00173     9.8888E-04 .00000     .05384        378    
+Triagem.Queue.WaitingTime                   .00190     9.3353E-04 .00000     .06002        378    
+Posto de enfermagem.Queue.WaitingTime       9.6351E-04 4.5765E-04 .00000     .03453        377    
+Clínico Geral.Queue.WaitingTime             .01519     (Insuf)    .00000     .16564        301    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.6670     .27311     .00000     9.0000     1.0000    
+R.Posto.NumberBusy                          .12076     .01821     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .12076     .01821     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .12053     .01829     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .12053     .01829     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .10989     .01314     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .10989     .01314     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .12652     .01650     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .12652     .01650     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .29706     .06004     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .29706     .06004     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .24664     (Insuf)    .00000     1.0000     1.0000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .24664     (Insuf)    .00000     1.0000     1.0000    
+R.Ala Méd..NumberBusy                       .09636     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .09636     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .20133     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .20133     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .05446     (Insuf)    .00000     2.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .06135     (Insuf)    .00000     3.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .00512     (Insuf)    .00000     1.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01679     (Insuf)    .00000     2.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .02174     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .02393     (Insuf)    .00000     4.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01211     (Insuf)    .00000     2.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .15243     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            378.00    
+Entrada.NumberOut                           377.00    
+R.Posto.NumberSeized                        377.00    
+R.Posto.ScheduledUtilization                .12076    
+R.Triagem.NumberSeized                      378.00    
+R.Triagem.ScheduledUtilization              .12053    
+R.Balcão.NumberSeized                       378.00    
+R.Balcão.ScheduledUtilization               .10989    
+R.Ficha.NumberSeized                        378.00    
+R.Ficha.ScheduledUtilization                .12652    
+R.Clínico.NumberSeized                      301.00    
+R.Clínico.ScheduledUtilization              .29706    
+R.Cardio.NumberSeized                       15.000    
+R.Cardio.ScheduledUtilization               .24664    
+R.Ala Méd..NumberSeized                     53.000    
+R.Ala Méd..ScheduledUtilization             .09636    
+R.Otorrino.NumberSeized                     62.000    
+R.Otorrino.ScheduledUtilization             .20133    
+System.NumberOut                            377.00    
+
+Iniciando replicação 5 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 5 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .11860     .01716     .01280     2.0942        367    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        367    
+Entrada.WaitTime                            .03651     .01881     .00000     2.0854        367    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        367    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        367    
+Entrada.TotalTime                           .15510     .03334     .01435     2.1415        367    
+Cardiologista.Queue.WaitingTime             .25872     (Insuf)    .00000     1.9876         20    
+Otorrinolaringologista.Queue.WaitingTime    .03151     (Insuf)    .00000     .50825         54    
+Ala de medicação.Queue.WaitingTime          .01847     (Insuf)    .00000     .43373         50    
+Balcão de atendimento.Queue.WaitingTime     .00154     .00149     .00000     .09550        368    
+Ficha de atendimento.Queue.WaitingTime      .00193     9.1838E-04 .00000     .05393        369    
+Triagem.Queue.WaitingTime                   .00176     7.7343E-04 .00000     .03787        368    
+Posto de enfermagem.Queue.WaitingTime       .00188     (Corr)     .00000     .07294        367    
+Clínico Geral.Queue.WaitingTime             .01015     (Insuf)    .00000     .10686        294    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.9030     .34037     .00000     8.0000     2.0000    
+R.Posto.NumberBusy                          .11721     .01663     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .11721     .01663     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .12258     .01446     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .12258     .01446     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11849     .01853     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11849     .01853     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .12444     .01693     .00000     1.0000     1.0000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .12444     .01693     .00000     1.0000     1.0000    
+R.Clínico.NumberBusy                        .29474     .04525     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .29474     .04525     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .35882     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .35882     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .15468     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .15468     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .16549     (Insuf)    .00000     1.0000     1.0000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .16549     (Insuf)    .00000     1.0000     1.0000    
+Cardiologista.Queue.NumberInQueue           .17248     (Insuf)    .00000     2.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .05671     (Insuf)    .00000     2.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .03078     (Insuf)    .00000     1.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01884     (Insuf)    .00000     3.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .02373     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .02158     (Insuf)    .00000     3.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .02302     (Insuf)    .00000     3.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .09947     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            369.00    
+Entrada.NumberOut                           367.00    
+R.Posto.NumberSeized                        367.00    
+R.Posto.ScheduledUtilization                .11721    
+R.Triagem.NumberSeized                      368.00    
+R.Triagem.ScheduledUtilization              .12258    
+R.Balcão.NumberSeized                       368.00    
+R.Balcão.ScheduledUtilization               .11849    
+R.Ficha.NumberSeized                        369.00    
+R.Ficha.ScheduledUtilization                .12444    
+R.Clínico.NumberSeized                      294.00    
+R.Clínico.ScheduledUtilization              .29474    
+R.Cardio.NumberSeized                       20.000    
+R.Cardio.ScheduledUtilization               .35882    
+R.Ala Méd..NumberSeized                     50.000    
+R.Ala Méd..ScheduledUtilization             .15468    
+R.Otorrino.NumberSeized                     54.000    
+R.Otorrino.ScheduledUtilization             .16549    
+System.NumberOut                            367.00    
+
+Iniciando replicação 6 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 6 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .10290     .01199     .00991     1.1544        375    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        375    
+Entrada.WaitTime                            .02346     (Corr)     .00000     .53890        375    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        375    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        375    
+Entrada.TotalTime                           .12636     .01845     .01289     1.2699        375    
+Cardiologista.Queue.WaitingTime             .06080     (Insuf)    .00000     .51778         15    
+Otorrinolaringologista.Queue.WaitingTime    .00458     (Insuf)    .00000     .09866         40    
+Ala de medicação.Queue.WaitingTime          .01410     (Insuf)    .00000     .16579         59    
+Balcão de atendimento.Queue.WaitingTime     .00134     6.5444E-04 .00000     .06180        379    
+Ficha de atendimento.Queue.WaitingTime      .00136     6.4513E-04 .00000     .03079        379    
+Triagem.Queue.WaitingTime                   .00163     6.8570E-04 .00000     .05396        379    
+Posto de enfermagem.Queue.WaitingTime       .00235     .00111     .00000     .04729        376    
+Clínico Geral.Queue.WaitingTime             .01358     .00909     .00000     .31936        322    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.5886     (Corr)     .00000     9.0000     4.0000    
+R.Posto.NumberBusy                          .12758     .02048     .00000     1.0000     1.0000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .12758     .02048     .00000     1.0000     1.0000    
+R.Triagem.NumberBusy                        .11340     (Corr)     .00000     1.0000     1.0000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .11340     (Corr)     .00000     1.0000     1.0000    
+R.Balcão.NumberBusy                         .11078     .01861     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11078     .01861     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .12153     .01743     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .12153     .01743     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .28039     (Corr)     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .28039     (Corr)     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .25709     (Insuf)    .00000     1.0000     1.0000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .25709     (Insuf)    .00000     1.0000     1.0000    
+R.Ala Méd..NumberBusy                       .15869     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .15869     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .12268     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .12268     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .03263     (Insuf)    .00000     1.0000     1.0000    
+Otorrinolaringologista.Queue.NumberInQueue  .00611     (Insuf)    .00000     1.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .02773     (Insuf)    .00000     3.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01697     (Insuf)    .00000     2.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .01720     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .02058     (Insuf)    .00000     3.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .02949     (Insuf)    .00000     3.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .14575     (Insuf)    .00000     5.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            379.00    
+Entrada.NumberOut                           375.00    
+R.Posto.NumberSeized                        376.00    
+R.Posto.ScheduledUtilization                .12758    
+R.Triagem.NumberSeized                      379.00    
+R.Triagem.ScheduledUtilization              .11340    
+R.Balcão.NumberSeized                       379.00    
+R.Balcão.ScheduledUtilization               .11078    
+R.Ficha.NumberSeized                        379.00    
+R.Ficha.ScheduledUtilization                .12153    
+R.Clínico.NumberSeized                      322.00    
+R.Clínico.ScheduledUtilization              .28039    
+R.Cardio.NumberSeized                       15.000    
+R.Cardio.ScheduledUtilization               .25709    
+R.Ala Méd..NumberSeized                     59.000    
+R.Ala Méd..ScheduledUtilization             .15869    
+R.Otorrino.NumberSeized                     40.000    
+R.Otorrino.ScheduledUtilization             .12268    
+System.NumberOut                            375.00    
+
+Iniciando replicação 7 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 7 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .13442     .01947     .00898     2.4228        344    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        344    
+Entrada.WaitTime                            .03977     .01449     .00000     1.5958        344    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        344    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        344    
+Entrada.TotalTime                           .17419     .02468     .00898     2.4228        344    
+Cardiologista.Queue.WaitingTime             .28190     (Insuf)    .00000     1.5670         24    
+Otorrinolaringologista.Queue.WaitingTime    .03166     (Insuf)    .00000     .50842         51    
+Ala de medicação.Queue.WaitingTime          .01094     (Insuf)    .00000     .27975         55    
+Balcão de atendimento.Queue.WaitingTime     .00150     6.9837E-04 .00000     .04573        345    
+Ficha de atendimento.Queue.WaitingTime      .00169     .00118     .00000     .08595        345    
+Triagem.Queue.WaitingTime                   .00130     5.6321E-04 .00000     .04160        345    
+Posto de enfermagem.Queue.WaitingTime       .00118     5.6915E-04 .00000     .04754        344    
+Clínico Geral.Queue.WaitingTime             .01018     (Insuf)    .00000     .19415        270    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.9990     .38579     .00000     9.0000     1.0000    
+R.Posto.NumberBusy                          .11722     .02312     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .11722     .02312     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .10974     .01895     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .10974     .01895     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11595     .01659     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11595     .01659     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .11447     .01569     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .11447     .01569     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .25994     .05417     .00000     1.0000     1.0000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .25994     .05417     .00000     1.0000     1.0000    
+R.Cardio.NumberBusy                         .50822     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .50822     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .15667     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .15667     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .16079     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .16079     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .22552     (Insuf)    .00000     2.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .05382     (Insuf)    .00000     2.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .02007     (Insuf)    .00000     1.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01724     (Insuf)    .00000     2.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .01940     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .01494     (Insuf)    .00000     2.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01349     (Insuf)    .00000     2.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .09160     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            345.00    
+Entrada.NumberOut                           344.00    
+R.Posto.NumberSeized                        344.00    
+R.Posto.ScheduledUtilization                .11722    
+R.Triagem.NumberSeized                      345.00    
+R.Triagem.ScheduledUtilization              .10974    
+R.Balcão.NumberSeized                       345.00    
+R.Balcão.ScheduledUtilization               .11595    
+R.Ficha.NumberSeized                        345.00    
+R.Ficha.ScheduledUtilization                .11447    
+R.Clínico.NumberSeized                      270.00    
+R.Clínico.ScheduledUtilization              .25994    
+R.Cardio.NumberSeized                       24.000    
+R.Cardio.ScheduledUtilization               .50822    
+R.Ala Méd..NumberSeized                     55.000    
+R.Ala Méd..ScheduledUtilization             .15667    
+R.Otorrino.NumberSeized                     51.000    
+R.Otorrino.ScheduledUtilization             .16079    
+System.NumberOut                            344.00    
+
+Iniciando replicação 8 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 8 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .11881     .01662     .01561     1.1497        330    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        330    
+Entrada.WaitTime                            .02765     .01125     .00000     .60620        330    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        330    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        330    
+Entrada.TotalTime                           .14646     (Corr)     .01561     1.1497        330    
+Cardiologista.Queue.WaitingTime             .08196     (Insuf)    .00000     .52028         20    
+Otorrinolaringologista.Queue.WaitingTime    .04756     (Insuf)    .00000     .34084         52    
+Ala de medicação.Queue.WaitingTime          .00766     (Insuf)    .00000     .15358         50    
+Balcão de atendimento.Queue.WaitingTime     .00135     7.3231E-04 .00000     .07469        331    
+Ficha de atendimento.Queue.WaitingTime      6.9773E-04 3.1445E-04 .00000     .02227        332    
+Triagem.Queue.WaitingTime                   8.5012E-04 5.5867E-04 .00000     .02767        331    
+Posto de enfermagem.Queue.WaitingTime       .00151     7.0041E-04 .00000     .03629        330    
+Clínico Geral.Queue.WaitingTime             .01224     (Insuf)    .00000     .19462        259    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.6129     (Corr)     .00000     10.000     2.0000    
+R.Posto.NumberBusy                          .10775     .01857     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .10775     .01857     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .09868     .01492     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .09868     .01492     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .12165     .02156     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .12165     .02156     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .11195     .01417     .00000     1.0000     1.0000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .11195     .01417     .00000     1.0000     1.0000    
+R.Clínico.NumberBusy                        .27618     .05245     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .27618     .05245     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .24867     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .24867     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .13957     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .13957     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .20427     (Insuf)    .00000     1.0000     1.0000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .20427     (Insuf)    .00000     1.0000     1.0000    
+Cardiologista.Queue.NumberInQueue           .05464     (Insuf)    .00000     2.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .08243     (Insuf)    .00000     3.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .01276     (Insuf)    .00000     1.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01494     (Insuf)    .00000     3.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .00772     (Insuf)    .00000     2.0000     .00000    
+Triagem.Queue.NumberInQueue                 .00938     (Insuf)    .00000     3.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01665     (Insuf)    .00000     2.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .10567     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            332.00    
+Entrada.NumberOut                           330.00    
+R.Posto.NumberSeized                        330.00    
+R.Posto.ScheduledUtilization                .10775    
+R.Triagem.NumberSeized                      331.00    
+R.Triagem.ScheduledUtilization              .09868    
+R.Balcão.NumberSeized                       331.00    
+R.Balcão.ScheduledUtilization               .12165    
+R.Ficha.NumberSeized                        332.00    
+R.Ficha.ScheduledUtilization                .11195    
+R.Clínico.NumberSeized                      259.00    
+R.Clínico.ScheduledUtilization              .27618    
+R.Cardio.NumberSeized                       20.000    
+R.Cardio.ScheduledUtilization               .24867    
+R.Ala Méd..NumberSeized                     50.000    
+R.Ala Méd..ScheduledUtilization             .13957    
+R.Otorrino.NumberSeized                     52.000    
+R.Otorrino.ScheduledUtilization             .20427    
+System.NumberOut                            330.00    
+
+Iniciando replicação 9 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 9 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .10582     .01456     .01542     1.5992        365    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        365    
+Entrada.WaitTime                            .02699     .00891     .00000     .47900        365    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        365    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        365    
+Entrada.TotalTime                           .13281     .01855     .01696     1.6299        365    
+Cardiologista.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         11    
+Otorrinolaringologista.Queue.WaitingTime    .01756     (Insuf)    .00000     .19222         49    
+Ala de medicação.Queue.WaitingTime          .02290     (Insuf)    .00000     .29031         74    
+Balcão de atendimento.Queue.WaitingTime     .00134     9.6186E-04 .00000     .08306        365    
+Ficha de atendimento.Queue.WaitingTime      .00128     7.3898E-04 .00000     .04015        365    
+Triagem.Queue.WaitingTime                   .00191     8.9080E-04 .00000     .04012        365    
+Posto de enfermagem.Queue.WaitingTime       .00196     .00103     .00000     .04181        365    
+Clínico Geral.Queue.WaitingTime             .01615     (Insuf)    .00000     .22110        305    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.6158     .25880     .00000     9.0000     .00000    
+R.Posto.NumberBusy                          .11634     .01734     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .11634     .01734     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .12811     .01855     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .12811     .01855     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11663     .02010     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11663     .02010     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .10911     .01542     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .10911     .01542     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .30670     .04879     .00000     1.0000     .00000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .30670     .04879     .00000     1.0000     .00000    
+R.Cardio.NumberBusy                         .18205     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .18205     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .17355     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .17355     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberBusy                       .15500     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .15500     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .02868     (Insuf)    .00000     2.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .05648     (Insuf)    .00000     3.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01632     (Insuf)    .00000     2.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .01563     (Insuf)    .00000     3.0000     .00000    
+Triagem.Queue.NumberInQueue                 .02326     (Insuf)    .00000     3.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .02382     (Insuf)    .00000     3.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .16415     (Insuf)    .00000     6.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            365.00    
+Entrada.NumberOut                           365.00    
+R.Posto.NumberSeized                        365.00    
+R.Posto.ScheduledUtilization                .11634    
+R.Triagem.NumberSeized                      365.00    
+R.Triagem.ScheduledUtilization              .12811    
+R.Balcão.NumberSeized                       365.00    
+R.Balcão.ScheduledUtilization               .11663    
+R.Ficha.NumberSeized                        365.00    
+R.Ficha.ScheduledUtilization                .10911    
+R.Clínico.NumberSeized                      305.00    
+R.Clínico.ScheduledUtilization              .30670    
+R.Cardio.NumberSeized                       11.000    
+R.Cardio.ScheduledUtilization               .18205    
+R.Ala Méd..NumberSeized                     74.000    
+R.Ala Méd..ScheduledUtilization             .17355    
+R.Otorrino.NumberSeized                     49.000    
+R.Otorrino.ScheduledUtilization             .15500    
+System.NumberOut                            365.00    
+
+Iniciando replicação 10 de 10
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                                  Sumário para Replicação 10 de 10
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+Replicação terminada no tempo de      : 30.0 Segundos 
+Unidade de Tempo Base: Segundos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entrada.VATime                              .11564     .01552     .00989     1.1386        358    
+Entrada.NVATime                             .00000     .00000     .00000     .00000        358    
+Entrada.WaitTime                            .02273     .00864     .00000     .43904        358    
+Entrada.TranTime                            .00000     .00000     .00000     .00000        358    
+Entrada.OtherTime                           .00000     .00000     .00000     .00000        358    
+Entrada.TotalTime                           .13837     .01996     .01879     1.1386        358    
+Cardiologista.Queue.WaitingTime             .05242     (Insuf)    .00000     .43904         23    
+Otorrinolaringologista.Queue.WaitingTime    .02306     (Insuf)    .00000     .15157         59    
+Ala de medicação.Queue.WaitingTime          .01079     (Insuf)    .00000     .20163         60    
+Balcão de atendimento.Queue.WaitingTime     .00144     5.7309E-04 .00000     .05285        360    
+Ficha de atendimento.Queue.WaitingTime      .00119     5.2354E-04 .00000     .03320        360    
+Triagem.Queue.WaitingTime                   .00144     5.8563E-04 .00000     .03159        360    
+Posto de enfermagem.Queue.WaitingTime       .00117     7.7052E-04 .00000     .06726        359    
+Clínico Geral.Queue.WaitingTime             .01135     (Insuf)    .00000     .25528        278    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entrada.WIP                                 1.6572     .24967     .00000     8.0000     2.0000    
+R.Posto.NumberBusy                          .11640     .01672     .00000     1.0000     .00000    
+R.Posto.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Posto.Utilization                         .11640     .01672     .00000     1.0000     .00000    
+R.Triagem.NumberBusy                        .11436     .01712     .00000     1.0000     .00000    
+R.Triagem.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Triagem.Utilization                       .11436     .01712     .00000     1.0000     .00000    
+R.Balcão.NumberBusy                         .11490     .02057     .00000     1.0000     .00000    
+R.Balcão.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Balcão.Utilization                        .11490     .02057     .00000     1.0000     .00000    
+R.Ficha.NumberBusy                          .12060     .01719     .00000     1.0000     .00000    
+R.Ficha.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ficha.Utilization                         .12060     .01719     .00000     1.0000     .00000    
+R.Clínico.NumberBusy                        .30408     .04387     .00000     1.0000     1.0000    
+R.Clínico.NumberScheduled                   1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Clínico.Utilization                       .30408     .04387     .00000     1.0000     1.0000    
+R.Cardio.NumberBusy                         .24005     (Insuf)    .00000     1.0000     .00000    
+R.Cardio.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Cardio.Utilization                        .24005     (Insuf)    .00000     1.0000     .00000    
+R.Ala Méd..NumberBusy                       .14987     (Insuf)    .00000     1.0000     1.0000    
+R.Ala Méd..NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Ala Méd..Utilization                      .14987     (Insuf)    .00000     1.0000     1.0000    
+R.Otorrino.NumberBusy                       .22183     (Insuf)    .00000     1.0000     .00000    
+R.Otorrino.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+R.Otorrino.Utilization                      .22183     (Insuf)    .00000     1.0000     .00000    
+Cardiologista.Queue.NumberInQueue           .04018     (Insuf)    .00000     1.0000     .00000    
+Otorrinolaringologista.Queue.NumberInQueue  .04534     (Insuf)    .00000     2.0000     .00000    
+Ala de medicação.Queue.NumberInQueue        .02158     (Insuf)    .00000     1.0000     .00000    
+Balcão de atendimento.Queue.NumberInQueue   .01733     (Insuf)    .00000     2.0000     .00000    
+Ficha de atendimento.Queue.NumberInQueue    .01432     (Insuf)    .00000     2.0000     .00000    
+Triagem.Queue.NumberInQueue                 .01726     (Insuf)    .00000     2.0000     .00000    
+Posto de enfermagem.Queue.NumberInQueue     .01395     (Insuf)    .00000     2.0000     .00000    
+Clínico Geral.Queue.NumberInQueue           .10514     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entrada.NumberIn                            360.00    
+Entrada.NumberOut                           358.00    
+R.Posto.NumberSeized                        359.00    
+R.Posto.ScheduledUtilization                .11640    
+R.Triagem.NumberSeized                      360.00    
+R.Triagem.ScheduledUtilization              .11436    
+R.Balcão.NumberSeized                       360.00    
+R.Balcão.ScheduledUtilization               .11490    
+R.Ficha.NumberSeized                        360.00    
+R.Ficha.ScheduledUtilization                .12060    
+R.Clínico.NumberSeized                      278.00    
+R.Clínico.ScheduledUtilization              .30408    
+R.Cardio.NumberSeized                       23.000    
+R.Cardio.ScheduledUtilization               .24005    
+R.Ala Méd..NumberSeized                     60.000    
+R.Ala Méd..ScheduledUtilization             .14987    
+R.Otorrino.NumberSeized                     59.000    
+R.Otorrino.ScheduledUtilization             .22183    
+System.NumberOut                            358.00    
+
+
+                                      ARENA Simulation Results
+                                            Victor Farias
+
+                              Resumo de resultados para 10 Replicações
+
+Projeto: PA Hospital                                                 Data da execução :11/30/2018
+Analista: Victor Farias                                               Data de revisão do modelo:11/30/2018
+
+
+                                             RESULTADOS
+
+Identificador                                 Média    Meia-largura Mínima    Maximo # de Replicações
+___________________________________________________________________________________________________
+
+Entrada.NumberIn                            360.80     10.413     332.00     379.00     10
+Entrada.NumberOut                           359.10     10.274     330.00     377.00     10
+R.Posto.NumberSeized                        359.40     10.388     330.00     377.00     10
+R.Posto.ScheduledUtilization                .11726     .00454     .10775     .12758     10
+R.Triagem.NumberSeized                      360.40     10.546     331.00     379.00     10
+R.Triagem.ScheduledUtilization              .11720     .00623     .09868     .12811     10
+R.Balcão.NumberSeized                       360.60     10.530     331.00     379.00     10
+R.Balcão.ScheduledUtilization               .11466     .00267     .10989     .12165     10
+R.Ficha.NumberSeized                        360.80     10.413     332.00     379.00     10
+R.Ficha.ScheduledUtilization                .11818     .00400     .10911     .12652     10
+R.Clínico.NumberSeized                      289.10     13.320     259.00     322.00     10
+R.Clínico.ScheduledUtilization              .28834     .01349     .25761     .30987     10
+R.Cardio.NumberSeized                       18.100     2.8101     11.000     24.000     10
+R.Cardio.ScheduledUtilization               .30667     .07641     .18205     .50822     10
+R.Ala Méd..NumberSeized                     58.100     5.8058     50.000     74.000     10
+R.Ala Méd..ScheduledUtilization             .14834     .01845     .09636     .17858     10
+R.Otorrino.NumberSeized                     53.000     4.9212     40.000     63.000     10
+R.Otorrino.ScheduledUtilization             .17035     .02683     .10356     .22183     10
+System.NumberOut                            359.10     10.274     330.00     377.00     10
+
+Tempo executando a simulação: 0.23 minutos.
+Simulação completada.

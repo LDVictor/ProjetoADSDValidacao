@@ -1,0 +1,30 @@
+[RESOURCES]
+R. Posto
+R. Triagem
+R. Balcão
+R. Ficha
+R. Clínico
+R. Cardio
+R. Ala Méd.
+R. Otorrino
+[VARIABLES]
+Ala de medicação.NumberIn
+Ala de medicação.NumberOut
+Ficha de atendimento.NumberIn
+Condição do paciente.NumberOut True
+Triagem.NumberOut
+Condição do paciente.NumberOut False
+Otorrinolaringologista.NumberIn
+Otorrinolaringologista.NumberOut
+Posto de enfermagem.NumberIn
+Balcão de atendimento.NumberIn
+Posto de enfermagem.NumberOut
+Balcão de atendimento.NumberOut
+Chegada.NumberOut
+Saída.NumberOut
+Cardiologista.NumberIn
+Cardiologista.NumberOut
+Ficha de atendimento.NumberOut
+Clínico Geral.NumberOut
+Clínico Geral.NumberIn
+Triagem.NumberIn
