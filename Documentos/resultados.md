@@ -1,7 +1,9 @@
 ﻿# Resultados
 
 -> A utilização do Arena foi calculada a partir do valor Instantaneous Utilization, com intervalos (Average - Half Width, Average + Half Width).
+
 -> O número de elementos do Arena foi calculado a partir da fórmula N = ρ/(1-ρ), utilizando a utilização encontrada acima.
+
 -> O tempo de espera do Arena foi calculado a partir do valor Waiting Time, com intervalos (Average - Half Width, Average + Half Width).
 
 - Situação 1
