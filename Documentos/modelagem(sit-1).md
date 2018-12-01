@@ -15,7 +15,7 @@ Situação 1: γ =  8eps; P clinico = 0,5; P otorrino = 0,3; P cardio = 0,2; P m
 
 λ8 = 4eps
 
-Tmax1 = Tmax2 = Tmax 3 =0,125s
+Tmax1 = Tmax2 = Tmax 3 = 0,125s
 
 Tmax4 = 0,25s
 
