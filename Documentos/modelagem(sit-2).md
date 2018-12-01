@@ -99,7 +99,7 @@ T8 = 0,08s
 
 - Limites Operacionais:
 
-  -> Gargalo(0,080): D1, D2, D3 e D7
+  -> Gargalo(0,080): D6
   
   -> Vazão: Xo <= 6,868 eps
   
