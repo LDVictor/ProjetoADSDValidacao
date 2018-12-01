@@ -4,7 +4,7 @@
 Situação 2:
 
 γ =  5eps;
-P clinico = 0,5;
+P clinico = 0,3;
 P otorrino = 0,6;
 P cardio = 0,1;
 P medicação = 0,8;
@@ -26,11 +26,11 @@ Tmax1 = Tmax2 = Tmax 3 = Tmax 6 = Tmax 7 = 0,2s
 
 Tmax4 = 0,667s
 
-Tmax5 = 0,3333s
+Tmax5 = 0,333s
 
 Tmax8 = 0,4s
 
-T1 = T2 = T3 = T7= 0,04s
+T1 = T2 = T3 = T7= 0,05s
 T4 = 0,1s
 T5 = 0,07s
 T6 = 0,8s
@@ -39,7 +39,7 @@ T8 = 0,08s
 
 - Utilização:
 
-  ρ1 = ρ2 = ρ3 = ρ7 = 0,32 = 25% 
+  ρ1 = ρ2 = ρ3 = ρ7 = 0,25 = 25% 
 
   ρ4 = 0,15 = 15%
 
